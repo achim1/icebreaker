@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+    </head>
+    <body>
+        Last updated: %s UTC<br>
+        All times are in UTC!<br>
+        <em class="fine">Green</em> means good, <em class="error">Red</em> means bad<br>
+        <a href="software_doc.html">Software/DAQ documentation</a><br>
+        <a href="hardware_doc.pdf">Hardware documentation</a><br>
+        <a href="..%s">Yesterdays data directory</a>
+        <h2>DAQ status</h2>
+        Muon rate yesterday (%s): <a href="muonrate.png" class="%s">%5.3f Hz</a><br>
+        Size of last finished DAQ file (%s): <em class="%s">%3.2f MB</em><br>
+        Age of last finished DAQ file (%s): <em class="%s">%i seconds</em><br>
+        Total amount of data taken today (%s): <em class="%s">%3.2f MB</em><br>
+        Total amount of data taken yesterday (%s): <em class="%s">%3.2f MB</em><br>
+        Number of DAQ files today (%s): <em class="%s">%i</em><br>
+        Number of DAQ files yesterday (%s): <em class="%s">%i</em><br>
+        Number of inclination files today (%s): <em class="%s">%i</em><br>
+        Number of inclination files yesterday (%s): <em class="%s">%i</em><br>
+        Size of last finished inclination file (%s): <em class="%s">%3.2f kB</em><br>
+        Age of last finished inclination file (%s): <em class="%s">%i seconds</em><br>
+        Number of pressure files today (%s): <em class="%s">%i</em><br>
+        Number of pressure files yesterday (%s): <em class="%s">%i</em><br>
+        <h2>Storage status</h2>
+        Free capacity data storage (SD-Card): <a href="capacity_sdcard.png" class="%s">%3.2f GB</a><br>
+        Free capacity internal storage (Filtered data): <a href="capacity_data.png" class="%s">%3.2f GB</a><br>
+        Free capacity internal storage (Logging data): <em class="%s">%3.2f GB</em><br>
+        <h2>Computer status</h2>
+        CPU temperature: <em class="%s">%i degrees Celsius</em><br>
+        Load: <em class="%s">%3.2f</em><br>
+        Free memory: <em class="%s">%4.2f MB</em><br>
+        Uptime: <em class="fine">%s </em><br>
+        <h2>PMT status</h2>
+        If you see some Gaussian distributions in all 4 plots, everything is fine :-)
+        <table>
+            <th><th>
+                    <tr>
+                        <td><img src="width_0.png"></img></td>
+                        <td><img src="width_1.png"></img></td>
+                    </tr>
+                    <tr>
+                        <td><img src="width_2.png"></img></td>
+                        <td><img src="width_3.png"></img></td>
+                    </tr>
+        <table>
+        <a href="../">Back to data</a>
+    </body>
+</html>

@@ -1,0 +1,4 @@
+#!/bin/bash
+
+MEM=`cat /proc/meminfo | grep "MemFree" | cut -d" " -f 10`
+echo $MEM

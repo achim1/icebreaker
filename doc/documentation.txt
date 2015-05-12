@@ -1,0 +1,46 @@
+
+Where do I find the data?
+-------------------------
+
+You open a browser on a computer on the Oden network (POLAR) and go to
+192.168.5.34
+This should open a page with a directory listing. If you click on status you come to status page (explained below).
+The data files are stored in a hierarchy of year/month/day, so clicking on 2009, then 11, then 11 brings you to the data
+of November 11th 2009. In this directory you will find a lot of files, and another directory called 'send'. This contains the data that we would like to have. 
+
+Which data should you send?
+---------------------------
+
+For each day there a three different categories of data in the 'send' directory. One filename is full_year_month_day.tar.bz2. This should have a size of several MB. If it should not be possible to send such a big file we split this file into several smaller ones, called full_year_month_day.tar.bz2_number where number starts at 0.
+The next smaller file is filtered_year_month_day.tar.bz2 which should be around 1 MB in size. If it is not possible to send the files starting with full, we ask for this file. Should the sending capacity be even smaller it would   
+
+Explanation of the DAQ status page
+----------------------------------
+
+The DAQ status page is update every 5 minutes. 
+Last updated: Gives the time, when the page was updated the last time (in UTC). If this is more than 10 minutes old there is probably something wrong with the computer. Please have a look at it in the weather container and reboot it if necessary.
+DAQ status
+Muon rate yesterday: Yesterdays average muon rate, calculated under the assumption the DAQ was operating for 24 hours.
+Size of last finished DAQ file: The size of the last finished DAQ.
+Age of last finished DAQ file: Age of the last finished DAQ file. As the DAQ starts a new file every hour this should never be bigger than 3600s.
+Total amount of data taken today: Total amount of data collected today.
+Total amount of data taken yesterday: Total amount of data collected yesterday.
+Number of DAQ files today: Number of DAQ files for today. Usually this should be one file for every hour of the day (i.e. at 10:37 there should be 11 files)
+Number of DAQ files yesterday: Number of DAQ files for yesterday. Usually this should be 24.
+Number of inclination files today: Number of files from the inclination sensor for today. 
+Number of inclination files yesterday: Number of files from the inclination sensor for yesterday. Usually this should be 24.
+Size of last finished inclination file:
+Age of last finished inclination file: Age of the last finished inclination file. As a new file is started every hour this should never be more than 3600s.
+Number of pressure files today: Normally this should be 1.
+Number of pressure files yesterday: Normally this should be 1
+Storage status
+Free capacity data storage (SD-Card): Free capacity on our main data storage.
+Free capacity internal storage (Filtered data): Free capacity on our storage for filtered data.
+Free capacity internal storage (Logging data): Free capacity on the logging disk.
+Computer status
+CPU temperature: Temperature of the CPU.
+Load: 0.00
+Free memory: Free RAM.
+Uptime: How long since the last computer reboot.
+PMT status
+This should the pulse width distributions of yesterday for all 4 PMTs. They should all show some Gaussian distribution (or even two). If one plot looks totally different from another that PMT is probably broken.

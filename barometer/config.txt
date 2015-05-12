@@ -1,0 +1,5 @@
+rebootOnDisconnect
+samplesPerFile = 1000
+sampleRate = 1000
+statusIndicators = Normal
+interleave = 4
