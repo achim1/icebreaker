@@ -8,7 +8,7 @@
 # unfortunately full path is needed as this script
 # will be executed by cron
 
-source /home/cosmic/icebreaker/analysis/config.sh
+source $HOME/icebreaker/analysis/config.sh
 # don't change, or you might have to change the scripts
 ANALYSIS_BASEDIR=${DATA_BASEDIR}/analysis
 DAQ_BASEDIR=${DATA_BASEDIR}/daq
